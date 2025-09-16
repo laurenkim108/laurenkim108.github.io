@@ -3,41 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <title>Project 1 - Solar System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff; 
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ff4500; 
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #32cd32;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .video-section, .screenshot-section {
+      background-color: #fffacd; 
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    iframe {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .screenshot-section div {
+      background-color: #e0ffff; 
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .screenshot-section img {
+      max-width: 400px;
+      border-radius: 5px;
+      display: block;
+      margin: auto;
+    }
+
+    .screenshot-section p {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #ff6347; 
+      font-weight: bold;
+    }
+
+    a.back-link {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+      text-decoration: none;
+      background-color: #ff69b4; 
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    a.back-link:hover {
+      background-color: #ff1493;
+    }
+  </style>
 </head>
 <body>
   <h1>Project 1: Solar System</h1>
 
-  <h2>Tutorial Results</h2>
-  <iframe width="560" height="315"
-    src="https://www.youtube.com/embed/3DiGOcTfqd0"
-    title="YouTube video player" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
-
-  <h2>Changes Made</h2>
-  <div>
-    <img src="Screenshots/change1.png" alt="I changed the texture according to each planet." width="400">
-    <p>I changed the texture according to each planet.</p>
+  <div class="video-section">
+    <h2>Tutorial Results</h2>
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/3DiGOcTfqd0"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
   </div>
-  <div>
-    <img src="Screenshots/change2.png" alt="I changed the orbital Y-axis for every planet so that it isn't in a straight line." width="400">
-    <p>I changed the orbital Y-axis for every planet so that it isn't in a straight line.</p>
-  </div>
-  <div>
-    <img src="Screenshots/change3.png" alt="I added a tilt to the axis of Saturn to make it look a little more realistic." width="400">
-    <p>I added a tilt to the axis of Saturn to make it look a little more realistic.</p>
-  </div>
-  
 
-  <h2>Final Results</h2>
-  <iframe width="560" height="315"
-    src="https://www.youtube.com/embed/aBMcF893x9k"
-    title="YouTube video player" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
+  <div class="screenshot-section">
+    <h2>Changes Made</h2>
+    <div>
+      <img src="Screenshots/change1.png" alt="I changed the texture according to each planet.">
+      <p>I changed the texture according to each planet.</p>
+    </div>
+    <div>
+      <img src="Screenshots/change2.png" alt="I changed the orbital Y-axis for every planet so that it isn't in a straight line.">
+      <p>I changed the orbital Y-axis for every planet so that it isn't in a straight line.</p>
+    </div>
+    <div>
+      <img src="Screenshots/change3.png" alt="I added a tilt to the axis of Saturn to make it look a little more realistic.">
+      <p>I added a tilt to the axis of Saturn to make it look a little more realistic.</p>
+    </div>
+  </div>
 
-  <p><a href="index.html">⬅ Back to Home</a></p>
+  <div class="video-section">
+    <h2>Final Results</h2>
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/aBMcF893x9k"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <a href="index.html" class="back-link">⬅ Back to Home</a>
 </body>
 </html>
