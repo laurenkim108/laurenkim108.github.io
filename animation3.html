@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +16,7 @@
     h1 {
       text-align: center;
       color: #ff4500; 
-      margin-bottom: 40px;
+      margin-bottom: 10px;
     }
 
     h2 {
@@ -27,18 +26,19 @@
       text-align: center;
     }
 
-    .video-section, .screenshot-section {
+    p.center {
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 40px;
+      color: #444;
+    }
+
+    .video-section, .screenshot-section, .principles-section, .storyboard-section, .explanation-section {
       background-color: #fffacd; 
       padding: 20px;
       border-radius: 10px;
       margin-bottom: 30px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .inspiration-section {
-      max-width: 400px;
-      border-radius: 5px;
-      display: block;
-      margin: auto;
     }
 
     iframe {
@@ -48,7 +48,7 @@
       border-radius: 10px;
     }
 
-    .screenshot-section div {
+    .screenshot-section div, .principles-section div, .storyboard-section div {
       background-color: #e0ffff; 
       padding: 10px;
       margin-bottom: 15px;
@@ -57,14 +57,14 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
-    .screenshot-section img {
+    .screenshot-section img, .principles-section img, .storyboard-section img {
       max-width: 400px;
       border-radius: 5px;
       display: block;
       margin: auto;
     }
 
-    .screenshot-section p {
+    .screenshot-section p, .principles-section p {
       margin-top: 8px;
       font-size: 14px;
       color: #ff6347; 
@@ -87,97 +87,116 @@
     a.back-link:hover {
       background-color: #ff1493;
     }
+
     .reference-section {
-  background-color: #e6e6fa;  /* light lavender */
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 40px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
+      background-color: #e6e6fa; 
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 40px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
 
-  .reference-section h2 {
-    color: #32cd32;
-    text-align: center;
-    margin-bottom: 20px;
-  }
+    .reference-section h2 {
+      color: #32cd32;
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
-  .reference-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+    .reference-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
 
-  .reference-section li {
-    margin: 10px 0;
-    text-align: center;
-  }
+    .reference-section li {
+      margin: 10px 0;
+      text-align: center;
+    }
 
-  .reference-section a {
-    color: #ff4500;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
+    .reference-section a {
+      color: #ff4500;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
 
-  .reference-section a:hover {
-    color: #ff1493;
-  }
+    .reference-section a:hover {
+      color: #ff1493;
+    }
   </style>
 </head>
+
 <body>
   <h1>Project 3: Bouncy Ball</h1>
+  <p class="center"><strong>Created by:</strong> Lauren Kim &nbsp; | &nbsp; <strong>Date:</strong> October 16, 2025 &nbsp; | &nbsp; <strong>CSCI Animation Project</strong></p>
 
-  <div class="inspiration-section">
-    <h2>Inspiration</h2>
+  <div class="storyboard-section">
+    <h2>Storyboards & Written Description</h2>
     <div>
-      <img src="Screenshots/chest1.jpg" style="max-width:300px;height:auto;">
+      <img src="Screenshots/storyboard1.jpg" alt="Storyboard 1">
+      <p>Storyboard Frame 1: The ball drops from above the screen, showing anticipation before motion.</p>
     </div>
     <div>
-      <img src="Screenshots/chest2.jpg" style="max-width:300px;height:auto;">
+      <img src="Screenshots/storyboard2.jpg" alt="Storyboard 2">
+      <p>Storyboard Frame 2: The ball squashes on impact, emphasizing the weight and force.</p>
     </div>
-    <p>I changed the chest to make the bottom angled instead of straight.</p>
+    <div>
+      <img src="Screenshots/storyboard3.jpg" alt="Storyboard 3">
+      <p>Storyboard Frame 3: The ball stretches upward as it bounces back, illustrating elasticity and energy.</p>
+    </div>
+    <p><strong>Description:</strong> This short animation depicts a red ball bouncing across a surface, showcasing realistic motion through the principles of squash and stretch, timing, and arcs. The animation emphasizes physics-based realism and smooth transitions.</p>
   </div>
-  
-  <div class="video-section">
-    <h2>Wireframe</h2>
-    <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/PPXuJm8qDwQ"
-      title="Wireframe" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
+
+  <div class="principles-section">
+    <h2>Animation Principles Depicted</h2>
+    <div>
+      <img src="Screenshots/squash.png" alt="Squash and ">
+      <img src="Screenshots/stretch.png" alt="Stretch"> 
+      <p>1. Squash and Stretch — exaggerates the impact and rebound of the ball.</p>
+    </div>
+    <div>
+      <img src="Screenshots/anticipation.png" alt="Anticipation">
+      <p>2. Anticipation — the ball pauses slightly before dropping, preparing the viewer for the main action.</p>
+    </div>
+    <div>
+      <img src="Screenshots/appeal.png" alt="Appeal">
+      <p>3. Appeal — the bowling ball looking at the audience at the end adds humor.</p>
+    </div>
   </div>
 
   <div class="screenshot-section">
-    <h2>Wireframe pictures</h2>
+    <h2>Still Images from the Animation</h2>
     <div>
-      <img src="Screenshots/wireframe1.png">
+      <img src="Screenshots/frame1.png" alt="Frame 1">
     </div>
     <div>
-      <img src="Screenshots/wireframe2.png">
+      <img src="Screenshots/frame2.png" alt="Frame 2">
     </div>
     <div>
-      <img src="Screenshots/wireframe3.png">
+      <img src="Screenshots/frame3.png" alt="Frame 3">
     </div>
   </div>
 
   <div class="video-section">
-    <h2>Final Results</h2>
+    <h2>Final Animation</h2>
     <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/jk5ASuFpYME"
-      title="YouTube video player" frameborder="0"
+      src="https://www.youtube.com/embed/kvLq3NSuzvI"
+      title="Final Bouncy Ball Animation" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen>
     </iframe>
   </div>
 
-
+  <div class="explanation-section">
+    <h2>Artist’s Explanation</h2>
+    <p>This animation was designed to explore how weight and timing can communicate physical properties through simple motion. I aimed for a smooth, believable bounce using consistent keyframes and adjusted spacing. The project also helped me practice secondary motion and easing transitions to give the illusion of gravity and momentum.</p>
+  </div>
   <div class="reference-section">
     <h2>References & Tools</h2>
     <ul>
-      <li><a href="https://www.amazon.com/dp/B0CQTSKXTB/ref=sspa_dk_detail_right_aax_0?psc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfcmlnaHRfc2hhcmVk" target="_blank">Inspiration Pictures</a></li>
-      <li><a href="https://www.myfreetextures.com/seamless-wood-texture/" target="_blank">Wood Texture Template</a></li>
-      <li><a href="https://wallpaperaccess.com/solid-gold" target="_blank">Gold Texture</a></li>
+      <li><a href="https://kor.pngtree.com/free-backgrounds-photos/%EA%B5%AC-%EA%B0%80%EB%AF%B8%EC%98%A4%EC%B9%B4-%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90-%EC%B2%B4%EC%9C%A1%EA%B4%80" target="_blank">Background</a></li>
+      <li><a href="https://mavink.com/explore/Wood-Texture" target="_blank">Wood Texture Template</a></li>
+      <li><a href="https://www.istockphoto.com/illustrations/soccer-ball-texture" target="_blank">Soccer Ball</a></li>
     </ul>
   </div>
 
