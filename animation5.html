@@ -1,1 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4 - Rube Goldberg Machine</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Your light blue background */
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            color: #333;
+        }
 
+        h1 {
+            text-align: center;
+            color: #ff4500; /* Your orange h1 color */
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #32cd32; /* Your green h2 color */
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* This is your ".video-section" style, applied to all content boxes */
+        .content-box {
+            background-color: #fffacd; /* Your light yellow background */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* This is for the embedded YouTube/Vimeo video */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px; /* From your iframe style */
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        
+        /* This is your ".screenshot-section div" style, applied to the object list */
+        .object-item {
+            background-color: #e0ffff; /* Your light cyan item background */
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* This is your ".screenshot-section img" style */
+        .object-item img, .storyboard-img {
+            max-width: 400px;
+            border-radius: 5px;
+            display: block;
+            margin: 10px auto;
+        }
+        
+        /* This is your ".screenshot-section p" style */
+        .object-item p {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #ff6347; /* Your tomato red caption color */
+            font-weight: bold;
+        }
+
+        /* Styling for the main description text */
+        .description-text {
+            font-size: 1.05em;
+            line-height: 1.6;
+            padding: 0 10px;
+        }
+        a.back-link {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            text-decoration: none;
+            background-color: #ff69b4; 
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        a.back-link:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Project 4: Rube Goldberg Machine</h1>
+    </header>
+
+    <main>
+        
+        <section class="content-box" id="animation">
+            <h2>Final Animation</h2>
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/ioOONRUUzrU" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section class="content-box" id="description">
+            <h2>Animation Description</h2>
+            <p class="description-text">
+                A yellow marble starts off on a series of ramps. It then goes onto a lever, which leads to dominoes. As the dominoes are knocked over, they hit a small blue ball, which falls onto a button.
+            </p>
+        </section>
+
+        <section class="content-box" id="storyboards">
+            <h2>Storyboards</h2>
+            <img src="Screenshots/storyboard2.jpg" alt="Storyboard sketches for the Rube Goldberg machine" class="storyboard-img">
+        </section>
+
+        <section class="content-box" id="objects">
+            <h2>Machine Objects</h2>
+            
+            <div class="object-item">
+                <img src="Screenshots/yellowball.png" alt="Yellow Marble">
+                <p>Object 1: Yellow Marble</p>
+            </div>
+
+            <div class="object-item">
+                <img src="Screenshots/seesaw.png" alt="Image of Object 2">
+                <p>Object 2: Seesaw</p>
+            </div>
+
+            <div class="object-item">
+                <img src="Screenshots/dominos.png" alt="Image of Object 3">
+                <p>Object 3: Dominoes</p>
+            </div>
+
+            <div class="object-item">
+                <img src="Screenshots/blue.png" alt="Image of Object 4">
+                <p>Object 4: Little Blue Ball</p>
+            </div>
+
+            <div class="object-item">
+                <img src="Screenshots/button.png" alt="Image of Object 5">
+                <p>Object 5: Button</p>
+            </div>
+
+        </section>
+
+        <section class="content-box" id="explanation">
+            <h2>Project Explanation</h2>
+            <p class="description-text">
+                I had some issues with lighting. I couldn't get the shadows to cast correctly. Rendering sped my video up, making it 8 seconds instead of 15.
+            </p>
+        </section>
+        
+        <a href="index.html" class="back-link">⬅ Back to Home</a>
+
+    </main>
+
+</body>
+</html>
